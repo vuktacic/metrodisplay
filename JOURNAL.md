@@ -36,3 +36,35 @@ In the following days I'll put down the actual aligned placements of all of thes
 Time today: 6.0 hours  
 **Time total: 6.0 hours**  
 _(I'm probably going to include lapse links from now on.)_
+
+## June 6th, 2026
+Routing done!
+
+I made a couple changes to my schematic:
+![](./assets/image%20copy.png)
+I had to swap the connections of the left level shifter to make the routing better. However at first I swapped the right level shifter, and it took me a good few minutes to realize I had to swap the left one.
+
+I also added decoupling capacitors for the level shifters themselves.
+![](./assets/image%20copy%202.png)
+
+As for other changes, I removed the unholy amount of solder bridges. They probably won't be used and take up a LOT of space.
+
+I then routed the entire PCB in one sitting.
+![](./assets/image%20copy%203.png)
+
+I kicked down the 5V rail from 5mm wide to 3mm wide. At that width it would still be at a manageable temperature even with a lot of amps flowing through it.
+
+I rotated the whole HUB75 connector, level shifters, and decoupling capacitors 45 degrees. The official reason was to package it on a smaller pcb. The real reason is that it has more aura.
+
+Overall the routing was pretty nice. I was able to route all the capacitors to the level shifters in a nice consistent pattern. Likewise for the level shifters to the ESP32. I only had to do vias + back routing for the led and the HUB75 5V rail (and even that was <1mm long each).
+
+I then added some stiching vias so that all of the ground pads and pours could be connected together.
+
+I then ran into a hiccup: there was no clearance for the IDC connector. The standard HUB75 connector uses a 2.54mm pitch 2x8 IDC connector. However, those are ~9mm wide. I only had 7.5mm of space. I had to select each half of the connector and move the capacitors and level shifters a millimeter vertically and a millimeter horizontally to make room for it. It went smoother than expected, but it was still a pain in the ass to cleanup missed tracks and move vias into position.
+
+
+However, it's done! The silkscreen is a mess right now, but I can whip it into shape. I am also planning on making a logo for this in figma (hopefully a little less shitty than my vdar logo).
+
+Time today: 3.5 hours  
+**Time total: 9.5 hours**  
+_(Btw lapse is kind of shitting the bed for me rn so I wasn't able to get it to work.)_

@@ -60,7 +60,24 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "starved_thermal|54254400|71628000|c221c208-883b-4768-b8ff-b36fad363ef2|92479e35-de67-4c43-ab81-762d939765a5|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|76088055|40079977|c221c208-883b-4768-b8ff-b36fad363ef2|59639341-4d06-4ad6-9788-734d6090d81b|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|87871433|44700646|c221c208-883b-4768-b8ff-b36fad363ef2|9760497d-7038-4267-8a66-6f479d9304cf|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|94496468|58057338|c221c208-883b-4768-b8ff-b36fad363ef2|e299f5ff-698a-427c-9bb4-1893877262b7|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -195,7 +212,7 @@
       ],
       "track_widths": [
         0.0,
-        5.0
+        3.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -516,7 +533,16 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "LED"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "5V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -646,7 +672,7 @@
         "uuid": "230ef3cd-5ef5-41b9-97c4-d984d1b22faa"
       }
     ],
-    "used_designators": "U1-4,R1,J1-3,JP1-16,SW1-3,C1-18,D1",
+    "used_designators": "U1-4,R1,J1-3,JP1-16,SW1-3,C1-20,D1",
     "variants": []
   },
   "sheets": [
