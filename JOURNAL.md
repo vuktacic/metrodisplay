@@ -68,3 +68,39 @@ However, it's done! The silkscreen is a mess right now, but I can whip it into s
 Time today: 3.5 hours  
 **Time total: 9.5 hours**  
 _(Btw lapse is kind of shitting the bed for me rn so I wasn't able to get it to work.)_
+
+## June 7th, 2026
+Fixed up the silkscreen for the board!
+
+![](./assets/image%20copy%204.png)
+
+I added labels for 5V and ground everywhere. I also made sure to label the solder bridge sides because that was a bit of the pain in the ass last time.
+
+I also created an edgecuts sketch in fusion 360 with rounded corners and correct mounting hole placements to be imported into kicad.
+
+![](./assets/image%20copy%205.png)
+
+An issue I ran into was sourcing correct 3d models for the components. I scaled the beefy capacitor up to match the height of the real life one. However, I had do about a half hour of digging on grabcad and forums to find a valid IDC 2x8 2.54mm pitch connector.
+
+![](./assets/image%20copy%206.png)
+
+I then had some fun in figma to create graphics for the backside of the board.
+
+I pulled my logo, the maple leaf, the hackclub logo, and vectorized the OUTPOST png on the website.
+
+![](./assets/image%20copy%208.png)
+
+I placed these on the back of the board.
+
+![](./assets/image%20copy%207.png)
+
+It took a bit of effort to find something that worked. I originally had them all clustered up, but that left a ton of empty space (and that wasn't the best on my previous board). I decided to split up the the outpost logo away from the rest of the logos, and then scaled it all the way up so that it would stretch across the entire board. It looks really nice now.
+
+I went into fusion to populate the usb-c decoy board and the ESP32.
+
+![](./assets/image%20copy%209.png)
+
+With that, the PCB design is done! I'll need to create an enclosure/box for the led-matrix and the board, and then write the code to display subway times and potentially a few animations.
+
+Time today: 4.0 hours  
+**Time total: 13.5 hours**  
