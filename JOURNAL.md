@@ -104,3 +104,37 @@ With that, the PCB design is done! I'll need to create an enclosure/box for the 
 
 Time today: 4.0 hours  
 **Time total: 13.5 hours**  
+
+## June 9th, 2026
+CADed a shitty enclosure for the board and display.
+
+I started with the top slanted part:
+![](./assets/image%20copy%2010.png)
+
+I had to slant it for:
+a) stability when lying horizontally and vertically
+b) to fit the massive ass capacitor on the circuit board
+
+I then made a side piece with an opening for usb-c power input:
+![](./assets/image%20copy%2011.png)
+
+And then a bottom cover with alignment tabs and circuit board mounting pillars (this is where the drawing of the pcb edge cuts was useful!):
+![](./assets/image%20copy%2012.png)
+
+I then had to put down hex holes for my m3 nuts:
+![](./assets/image%20copy%2013.png)
+
+I've decided that I will actually make them 0 tolerance like vdar! Originally I was planning on putting +0.2mm for slip fit, but I realized me accidentally leaving no tolerance was a blessing in disguise. If I leave it that way, then I can use my pinecil to heatpress the hex nuts in place. This means less fumbling around with keeping them in place during assembly!
+
+
+![](./assets/image%20copy%2014.png)
+![](./assets/image%20copy%2015.png)
+
+This was a speedcad. I want to get started on the code tomorrow, and then return to the cad to clean it up and refine it. (I want to add a portait stand and branding.)
+
+Other than that, I'll also need to make some pcbs for the controllers (huh?)
+
+If it wasn't said before, I'm pivoting! A metrodisplay is a great static piece for my bedroom, but it's not exactly that flashy at opensauce. I'm adding two to four controllers so that people can play tetris or pong on the display!
+
+Time today: 4.0 hours  
+**Time total: 17.5 hours**  
