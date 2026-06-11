@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "mdcore",
+			"path": "./mdcore"
+		}
+	],
+	"settings": {}
+}
