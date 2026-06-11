@@ -12,7 +12,7 @@ I was originally making a small project with a single LED panel to display subwa
 - [./JOURNAL.md](./JOURNAL.md): Journal
 
 View the PCB on KiCanvas:  
-[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?github=https://github.com/vuktacic/metrodisplay>/tree/main/pcb)
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?github=https://github.com/vuktacic/metrodisplay/tree/main/pcb)
 
 ## CAD
 ### Frame
