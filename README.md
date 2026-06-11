@@ -1,6 +1,7 @@
 # MD
 ## Description
-MD (metrodisplay) is a big LED matrix assembly with game controls to play pong and tetris (in progress). It's built with four outdoor (very bright) P5 64x32 panels, a custom pcb with an esp32, a cnc'd wooden frame, and power distribution from mains AC.
+MD (metrodisplay) is a big LED matrix assembly with game controls to play pong and tetris (in progress). It's built with four outdoor (very bright) P5 64x32 panels, a custom pcb with an esp32, a cnc'd wooden frame, and power distribution from mains AC. The total cost of the project is under $90 USD.
+
 I was originally making a small project with a single LED panel to display subway times for the Vancouver Skytrain (hence the name), but I realized that while that was great for a static bedroom display, something much more exciting and interactive like this would be much more fun to showcase at Opensauce!
 
 ## Structure
