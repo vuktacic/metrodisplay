@@ -188,7 +188,13 @@ That's the CAD.
 
 As for programming, I spent 3 hours making a pong game, but I don't have to journal that ;)
 
-Time today: 3.0 hours
-Firmware time today: 3.0 hours  
+Time today: 3.0 hours  
 **Time total: 20.5 hours**  
-**Firmware time total: 3.0 hours**
+
+## June 11th, 2026
+Spent today getting the repo together for submission. I create the [bill of materials](./bom.csv) and populated the [README](./README.md) with info and a bunch of screenshots of the project.
+
+Not really much else to say lol.
+
+Time today: 1.0 hours  
+**Time total: 21.5 hours**  
