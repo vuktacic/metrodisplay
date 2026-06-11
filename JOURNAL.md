@@ -188,5 +188,7 @@ That's the CAD.
 
 As for programming, I spent 3 hours making a pong game, but I don't have to journal that ;)
 
-Time today: 6.0 hours (3.0h firmware)  
-**Time total: 20.5 hours** (+3.0h)  
+Time today: 3.0 hours
+Firmware time today: 3.0 hours  
+**Time total: 20.5 hours**  
+**Firmware time total: 3.0 hours**
