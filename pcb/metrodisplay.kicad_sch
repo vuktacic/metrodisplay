@@ -12110,6 +12110,52 @@
 			)
 		)
 	)
+	(sheet
+		(at 134.62 102.87)
+		(size 144.78 58.42)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "38c00aa7-7ec8-486f-868c-faaf00f32111")
+		(property "Sheetname" "AC Power"
+			(at 134.62 102.1584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "acpower.kicad_sch"
+			(at 134.62 161.8746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "metrodisplay"
+				(path "/230ef3cd-5ef5-41b9-97c4-d984d1b22faa"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

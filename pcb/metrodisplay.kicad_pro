@@ -668,13 +668,17 @@
         "uuid": "230ef3cd-5ef5-41b9-97c4-d984d1b22faa"
       }
     ],
-    "used_designators": "U1-4,R1-13,J1-15,JP1-16,SW1-11,C1-22,D1",
+    "used_designators": "U1-4,R1-13,J1-20,JP1-16,SW1-11,C1-22,#PWR1-4,D1",
     "variants": []
   },
   "sheets": [
     [
       "230ef3cd-5ef5-41b9-97c4-d984d1b22faa",
       "metrodisplay"
+    ],
+    [
+      "38c00aa7-7ec8-486f-868c-faaf00f32111",
+      "AC Power"
     ]
   ],
   "text_variables": {},
