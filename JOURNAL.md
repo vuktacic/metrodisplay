@@ -138,3 +138,55 @@ If it wasn't said before, I'm pivoting! A metrodisplay is a great static piece f
 
 Time today: 4.0 hours  
 **Time total: 17.5 hours**  
+
+## June 10th, 2026
+So, controllers...
+I am running out of pins on my esp32. I did a little bit of research and discovered something called a resistor ladder. This was basically the exact thing I was envisioning in my head (having each button output a different voltage, and using ADC to read it).
+
+I went into kicad and whipped in the schematic for the controllers.
+![](./assets/image%20copy%2016.png)
+
+(I know, I know, the labels are covering each other.)
+
+I then imported them into my pcb. I REALLY wanted to avoid having to change the edge cuts, as that could completely throw off whether it would be able to fit into the enclosure. However, I realized that because these were simple low profile THT resistors, I could actually just put them underneath my esp32!
+
+![](./assets/image%20copy%2017.png)
+
+This was super convenient, as the pcb had an identical footprint, and I didn't have to change anything at all.
+
+![](./assets/image%20copy%2018.png)
+Also: the empty pads are for me to solder wires onto.
+
+
+I then started working on something new: the BIG display. four panels stacked together to make a 64cm x 32cm display.
+![](./assets/image%20copy%2019.png)
+
+I then started building an enclosure/stand for it. This was tricky, because I had to make sure that all the individual pieces would be able to fit in my carry-on luggage. I would also be cncing this on our schools router, so I designed it around 1/8" plywood.
+
+![](./assets/image%20copy%2020.png)
+
+This was the first piece, it barely fits in my luggage and honestly I might need to cut it down, but it's to hold all the panels together on one bhoard.
+
+I then designed a bottom stand.
+
+![](./assets/image%20copy%2021.png)
+
+And a 2x4 to hold it up.
+
+![](./assets/image%20copy%2022.png)
+
+Back panels & side panels. (I had to cut these in half to make it fit in my luggage).
+
+![](./assets/image%20copy%2023.png)
+![](./assets/image%20copy%2024.png)
+
+TSA is going to have a field day with this. Not a lot of people bring plywood and a 2x4 in their carry-on luggage.
+
+Anyway, these panels are actually really nice. They provide a lot of flat space for cnced designs/branding. I can also paint them with some kind of design!
+
+That's the CAD.
+
+As for programming, I spent 3 hours making a pong game, but I don't have to journal that ;)
+
+Time today: 6.0 hours (3.0h firmware)  
+**Time total: 20.5 hours** (+3.0h)  
