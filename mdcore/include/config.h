@@ -1,12 +1,11 @@
 #pragma once
+#include <Arduino.h>
 
 constexpr int BUTTON_UP_THRESHOLD = 400;
 constexpr int BUTTON_DOWN_THRESHOLD = 1200;
 constexpr int BUTTON_LEFT_THRESHOLD = 2000;
 constexpr int BUTTON_RIGHT_THRESHOLD = 2800;
 constexpr int BUTTON_CENTER_THRESHOLD = 3600;
-
-constexpr uint32_t FRAME_MS = 33; // 30 fps
 
 #define P1_PIN 34
 #define P2_PIN 39

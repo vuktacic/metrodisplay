@@ -3,7 +3,7 @@
 #include <ESP32-HUB75-VirtualMatrixPanel_T.hpp>
 #include "../../include/config.h"
 // #include "config.h" FUCK this shitty ass language
-#include "pong.h"
+#include "../pong/pong.h"
 
 namespace display {
     constexpr uint8_t NUM_ROWS = 2;

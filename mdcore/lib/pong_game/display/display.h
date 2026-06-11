@@ -3,7 +3,7 @@
 #include <ESP32-HUB75-MatrixPanel-I2S-DMA.h>
 #include <ESP32-HUB75-VirtualMatrixPanel_T.hpp>
 #include "config.h"
-#include "pong.h"
+#include "../pong/pong.h"
 
 namespace display {
     extern void init_display();
