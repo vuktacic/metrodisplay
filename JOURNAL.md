@@ -198,3 +198,19 @@ Not really much else to say lol.
 
 Time today: 1.0 hours  
 **Time total: 21.5 hours**  
+
+## June 12th, 2026
+I started collecting my wood for the display
+![](./assets/image%20copy%2025.png)
+
+Thin plywood for the panels, and thick 1/2" mdf for the stand.
+
+I realized that there wasn't really a need for the cnc router. I can instead do it on our cnc laser cutter! This will allow for way more detailed designs, as well as shading in the form of etching. I also don't have to worry about keeping the wood steady during cuts.
+
+I drew the stock bounds in fusion and fit all my pieces into it.
+![](./assets/image%20copy%2026.png)
+
+Over the weekend I'll work on the artwork. Come Monday, they'll be cut out!
+
+Time today: 2.0 hours  
+**Time total: 23.5 hours**

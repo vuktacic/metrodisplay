@@ -7,7 +7,7 @@ I was originally making a small project with a single LED panel to display subwa
 ## TODO List
 - [x] Pong game
 - [ ] Tetris game (in progress)
-- [ ] Art concept art
+- [ ] Concept art
 - [ ] CNC designs
 - [ ] CNC toolpathing
 - [ ] CNCing
