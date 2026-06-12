@@ -49,4 +49,8 @@ namespace board {
             lastIterationMs = millis();
         }
     }
+
+    bool Board::is_game_over() {
+        return false;
+    }
 }

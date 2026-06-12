@@ -13,7 +13,7 @@ namespace board {
 
 
     enum class Piece : uint8_t {
-        I, O, T, S, Z, J, L
+        I, O, T, S, Z, J, L, count
     };
 
     class Board {
@@ -22,7 +22,7 @@ namespace board {
         Piece next_piece;
         Piece current_piece;
 
-        uint8_t board[BOARD_HEIGHT][BOARD_WIDTH];
+        uint16_t board[BOARD_HEIGHT][BOARD_WIDTH];
 
         int px, py;
 
@@ -35,5 +35,7 @@ namespace board {
         }
 
         void new_piece();
+
+        bool is_game_over();
     };
 }

@@ -2,6 +2,7 @@
 #include <Arduino.h>
 #include <ESP32-HUB75-VirtualMatrixPanel_T.hpp>
 #include "../../include/config.h"
+#include "board/board.h"
 // #include "config.h" FUCK this shitty ass language
 
 namespace display {
@@ -11,6 +12,7 @@ namespace display {
     constexpr uint8_t PANEL_HEIGHT = 32;
     constexpr uint16_t PANEL_CHAIN_LENGTH = NUM_ROWS * NUM_COLS;
     constexpr uint8_t SCREEN_WIDTH = PANEL_WIDTH * NUM_COLS;
+    constexpr uint8_t SCREEN_HEIGHT = PANEL_HEIGHT * NUM_ROWS;
 
 
     MatrixPanel_I2S_DMA* display = nullptr;
@@ -44,5 +46,20 @@ namespace display {
 
     void reset() {
         display->clearScreen();
+    }
+
+    void displayBoard(uint8_t board[board::BOARD_HEIGHT][board::BOARD_WIDTH], uint8_t score, int x_offset) {
+        for(int y = 0; y < board::BOARD_HEIGHT; y++) {
+            for(int x = 0; x < board::BOARD_WIDTH; x++) {
+                // value of cell IS the colour, and we need to scale by size
+                uint16_t colour = board[y][x];
+                virtualDisplay->fillRect(x * board::SCALE + x_offset, y * board::SCALE + 1, board::SCALE, board::SCALE, colour);
+            }
+        }
+
+        virtualDisplay->setCursor(SCREEN_WIDTH / 2, x_offset * 3);
+        virtualDisplay->setTextColor(virtualDisplay->color565(255, 255, 255));
+        virtualDisplay->setTextSize(1);
+        virtualDisplay->print(score);
     }
 }
