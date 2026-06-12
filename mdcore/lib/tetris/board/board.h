@@ -1,0 +1,39 @@
+#pragma once
+#include <Arduino.h>
+#include "input.h"
+
+namespace board {
+    constexpr uint8_t SCALE = 3;
+    constexpr uint8_t BOARD_WIDTH = 10;
+    constexpr uint8_t BOARD_HEIGHT = 20;
+    uint8_t FALL_RATE_MS = 500;
+    uint8_t FAST_FALL_RATE_MS = 200;
+
+    uint8_t lastIterationMs = 0;
+
+
+    enum class Piece : uint8_t {
+        I, O, T, S, Z, J, L
+    };
+
+    class Board {
+    public:
+        uint8_t score;
+        Piece next_piece;
+        Piece current_piece;
+
+        uint8_t board[BOARD_HEIGHT][BOARD_WIDTH];
+
+        int px, py;
+
+        Board();
+        void begin();
+        void update(const input::ButtonState& input);
+
+        uint8_t get_score() const {
+            return score;
+        }
+
+        void new_piece();
+    };
+}
