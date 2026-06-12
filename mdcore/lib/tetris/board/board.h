@@ -21,6 +21,7 @@ namespace board {
         uint8_t score;
         Piece next_piece;
         Piece current_piece;
+        int current_rotation;
 
         uint16_t board[BOARD_HEIGHT][BOARD_WIDTH];
 
@@ -34,8 +35,12 @@ namespace board {
             return score;
         }
 
+        bool Board::is_valid_move(int x, int y, Piece piece, int rotation);
+
         void new_piece();
 
         bool is_game_over();
+
+        void place();
     };
 }
