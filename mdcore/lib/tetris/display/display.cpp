@@ -48,7 +48,7 @@ namespace display {
         display->clearScreen();
     }
 
-    void displayBoard(uint8_t board[board::BOARD_HEIGHT][board::BOARD_WIDTH], uint8_t score, int x_offset) {
+    void draw_board(uint8_t board[board::BOARD_HEIGHT][board::BOARD_WIDTH], uint8_t score, int x_offset) {
         for(int y = 0; y < board::BOARD_HEIGHT; y++) {
             for(int x = 0; x < board::BOARD_WIDTH; x++) {
                 // value of cell IS the colour, and we need to scale by size

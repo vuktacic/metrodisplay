@@ -12,7 +12,7 @@ namespace board {
     }
 
     void Board::begin() {
-        memset(board, 0, sizeof(board));
+        memset(vBoard, 0, sizeof(vBoard));
         lastIterationMs = millis();
     }
 
@@ -39,11 +39,16 @@ namespace board {
         }
 
         if(input == input::UP && is_valid_move(px, py, current_piece, (current_rotation + 1) % 4)) {
-            // TODO: rotate piece
+            current_rotation = (current_rotation + 1) % 4;
         }
 
         if(input == input::CENTER) {
-            // TODO: hard drop
+            while(is_valid_move(px, py + 1, current_piece, current_rotation)) {
+                py++;
+            }
+
+            place();
+            new_piece();
         }
 
         const uint8_t fall_rate = (input == input::DOWN) ? FAST_FALL_RATE_MS : FALL_RATE_MS;
@@ -60,6 +65,36 @@ namespace board {
         }
     }
 
+    void Board::clear_rows() {
+        // if rows full, clear row and move everything above down. including mid rows (not just bottom rows)
+        for(int y = BOARD_HEIGHT - 1; y >= 0; y--) {
+            bool row_full = true;
+            for(int x = 0; x < BOARD_WIDTH; x++) {
+                if(vBoard[y][x] == 0) {
+                    row_full = false;
+                    break;
+                }
+            }
+
+            if(!row_full) {
+                continue;
+            }
+
+            // Shift all rows above down
+            for(int ty = y; ty > 0; ty--) {
+                for(int x = 0; x < BOARD_WIDTH; x++) {
+                    vBoard[ty][x] = vBoard[ty - 1][x];
+                }
+            }
+
+            // Clear the top row
+            for(int x = 0; x < BOARD_WIDTH; x++) {
+                vBoard[0][x] = 0;
+            }
+            score += 100;
+        }
+    }
+
     bool Board::is_valid_move(int x, int y, Piece piece, int rotation) {
         for(int i = 0; i < 4; i++) {
             for(int j = 0; j < 4; j++) {
@@ -71,7 +106,7 @@ namespace board {
                         return false;
                     }
 
-                    if(board[new_y][new_x] != 0) {
+                    if(vBoard[new_y][new_x] != 0) {
                         return false;
                     }
                 }
@@ -104,7 +139,7 @@ namespace board {
                     int new_y = py + i;
 
                     if(new_x >= 0 && new_x < BOARD_WIDTH && new_y >= 0 && new_y < BOARD_HEIGHT) {
-                        board[new_y][new_x] = colour;
+                        vBoard[new_y][new_x] = colour;
                     }
                 }
             }
