@@ -4,6 +4,17 @@ MD (metrodisplay) is a big LED matrix assembly with game controls to play pong a
 
 I was originally making a small project with a single LED panel to display subway times for the Vancouver Skytrain (hence the name), but I realized that while that was great for a static bedroom display, something much more exciting and interactive like this would be much more fun to showcase at Opensauce!
 
+## TODO List
+- [ ] Tetris game (in progress)
+- [ ] CNC designs
+- [ ] CNC toolpathing
+- [ ] CNCing
+- [ ] Frame building
+- [ ] Electronics Setup
+- [ ] Final tests
+- [ ] Dismantling
+- [ ] Present at Opensauce!
+
 ## Structure
 - [./cad](./cad): STEP & F3D
 - [./pcb](./pcb): PCB Files.
