@@ -62,4 +62,17 @@ namespace display {
         virtualDisplay->setTextSize(1);
         virtualDisplay->print(score);
     }
+
+    void draw_game_over(uint8_t score) {
+        virtualDisplay->fillScreen(virtualDisplay->color565(0, 0, 0));
+        virtualDisplay->setCursor(SCREEN_WIDTH / 2 - 20, SCREEN_HEIGHT / 2 - 10);
+        virtualDisplay->setTextColor(virtualDisplay->color565(255, 0, 0));
+        virtualDisplay->setTextSize(2);
+        virtualDisplay->print("GAME OVER");
+        virtualDisplay->setCursor(SCREEN_WIDTH / 2 - 10, SCREEN_HEIGHT / 2 + 10);
+        virtualDisplay->setTextColor(virtualDisplay->color565(255, 255, 255));
+        virtualDisplay->setTextSize(1);
+        virtualDisplay->print("SCORE: ");
+        virtualDisplay->print(score);
+    }
 }

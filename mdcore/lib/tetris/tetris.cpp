@@ -26,6 +26,12 @@ namespace tetris {
         board1.update(input::p1State);
         board1.clear_rows();
 
+        if(board1.is_game_over()) {
+            display::draw_game_over(board1.score);
+            delay(3000);
+            return;
+        }
+
 
 
 

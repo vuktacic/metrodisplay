@@ -117,7 +117,8 @@ namespace board {
     }
 
     bool Board::is_game_over() {
-        return false;
+        // if the new piece cannot be placed at the starting position, game over
+        return !is_valid_move(px, py, current_piece, current_rotation);
     }
 
     void Board::place() {
