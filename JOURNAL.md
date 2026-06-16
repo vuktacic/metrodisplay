@@ -214,3 +214,20 @@ Over the weekend I'll work on the artwork. Come Monday, they'll be cut out!
 
 Time today: 2.0 hours  
 **Time total: 23.5 hours**
+
+## June 15th 2026
+
+Cut out the wood today!
+
+![](./assets/image%20copy%2027.png)
+
+One of my friends may or may not have accidentally taken my plywood and used it for his own project, so I had to find a bunch of pieces that would fit.
+
+It did take a lot of effort, But I eventually found a long piece. I had to snap it into chunks to get it to fit in the laser cutter, which did require quite a bit of strength.
+
+As for the moutning panel, it's slightly messed up (you can see the tiny sliver in the photo). However, it's going to be hidden behind the display, and testing the strength of the sliver, I believe it will be fine in holding up all the LED panels.
+
+In other news though, all of my parts have been shipped and are currently at the airport (in Shenzen, I presume) waiting to be flown across the pacific!
+
+Time today: 1.0 hours  
+**Time total: 24.5 hours**  
