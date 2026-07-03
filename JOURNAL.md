@@ -215,7 +215,7 @@ Over the weekend I'll work on the artwork. Come Monday, they'll be cut out!
 Time today: 2.0 hours  
 **Time total: 23.5 hours**
 
-## June 15th 2026
+## June 15th, 2026
 
 Cut out the wood today!
 
@@ -231,3 +231,43 @@ In other news though, all of my parts have been shipped and are currently at the
 
 Time today: 1.0 hours  
 **Time total: 24.5 hours**  
+
+## June 27th, 2026
+
+All the parts arrived! The pcbs look dressed to kill in red soldermask, and the led matrices are nice and big.
+
+![](./assets/image%20copy%2028.png)
+![](./assets/image%20copy%2029.png)
+![](./assets/image%20copy%2030.png)
+
+I then spent 3 hour soldering the pcbs in something best described as a learning experience. I soldered all the caps on first, and then tried soldering the tiny ass level shifters. I ended up ripping the pads off the pcb. I then took a replacement pcb (glad jlc ships 5 moq), and got the level shifters on eventually. It was terrible. I spent so long getting solder bridges off the pads. I still don't really know how to properly do it. I just rub my iron against the pads and then hope and pray that I'm able to get the bridges off with random motions of my soldering iron.
+
+![](./assets/image%20copy%2031.png)
+![](./assets/image%20copy%2032.png)
+![](./assets/image%20copy%2033.png)
+
+I then soldered all the capacitors on and header pins. However when it came to the big 470uF capacitor for the esp32 VIN, I just straight ripped a pad off. Not fun. But i've decided it isn't necessary, and that I'll just tie the usb-c power to the 5v rail directly with a jumper.
+
+![](./assets/image%20copy%2034.png)
+
+
+Overall, not fun.
+
+[Lapse link](https://lapse.hackclub.com/timelapse/s83o4plg0MXk)
+
+Time today: 3.25 hours  
+**Time total: 27.75 hours**  
+
+## July 2nd, 2026
+I soldered up the box header and the resistors on the board today.
+
+I decided to use a resistor ladder. I forgot to nab some from the school shop before leaving so I had to make do with what was in my arduino kit: 100Ω, 330Ω, 1kΩ, 2kΩ, & 5.1kΩ (as well as 10kΩ for the pulldowns). Likewise, I designed the pcb to fit the school resistors and not my own. That means that the spaces between the tht pads are actually too short, and I need to bend back one of the legs to get it to sit somewhat flat.
+
+![](./assets/image%20copy%2036.png)
+
+Then I soldered the box header. Now funny story. I forgot to mirror the led matrix panel output. That means that my box header needed to be soldered on the underside of the pcb! How fun! Anyway, I got it soldered on.
+
+![](./assets/image%20copy%2035.png)
+
+Time today: 1.75 hours  
+**Time total: 29.5 hours**
